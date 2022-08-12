@@ -22,6 +22,11 @@ h1,h2,h3,h4,h5,h6,ul,p {
     margin: 0;
     padding: 0;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .link {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -37,6 +42,7 @@ h1,h2,h3,h4,h5,h6,ul,p {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .section {
     padding-top: 94px;
@@ -62,7 +68,7 @@ h1,h2,h3,h4,h5,h6,ul,p {
     background-color: var(--accent-color);
 }
 .invisible-title {
-    visibility: hidden;
+    display: none;
 }
 
 /* === header === */
@@ -129,6 +135,7 @@ h1,h2,h3,h4,h5,h6,ul,p {
 
 /* === main === */
 .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -137,12 +144,14 @@ h1,h2,h3,h4,h5,h6,ul,p {
 .hero {
     background-color: var(--footer-bg-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 106px;
+    margin-bottom: 30px;
 
     color: var(--main-color);
     font-weight: 900;
@@ -153,8 +162,6 @@ h1,h2,h3,h4,h5,h6,ul,p {
     text-transform: uppercase;
 }
 .hero-button {
-    margin-top: 30px;
-    margin-bottom: 106px;
     padding-top: 10px;
     padding-right: 32px;
     padding-bottom: 10px;
@@ -171,6 +178,9 @@ h1,h2,h3,h4,h5,h6,ul,p {
     background-color: #188CE8;
 }
 /* === our features section === */
+.our-features {
+    padding-bottom: 0;
+}
 .features-title {
     line-height: 1.14;
     text-transform: uppercase;
@@ -190,7 +200,6 @@ h1,h2,h3,h4,h5,h6,ul,p {
 }
 /* === what are we doing section === */
 .works-list {
-    margin-top: 50px;
     display: flex;
 }
 .works-list .works-item + .works-item {
@@ -201,13 +210,15 @@ h1,h2,h3,h4,h5,h6,ul,p {
     background-color: var(--secondary-bg-color);
 }
 .team-title {
+    padding-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
 }
 .team-list {
-    margin-top: 50px;
     display: flex;
 }
 .team-list .team-card + .team-card {
@@ -218,11 +229,8 @@ h1,h2,h3,h4,h5,h6,ul,p {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team-card h3 {
-    margin-top: 30px;
-}
 .team-card p {
-    margin-top: 10px;
+    
 
     color: var(--secondary-text-color);
     font-size: 16px;
@@ -235,9 +243,10 @@ h1,h2,h3,h4,h5,h6,ul,p {
     padding-bottom: 60px;
     background-color: var(--footer-bg-color);
 }
+.logo-footer {
+    margin-bottom: 20px;
+}
 .address {
-    margin-top: 20px;
-
     font-style: normal;
     line-height: 1.71;
 }
@@ -251,6 +260,7 @@ h1,h2,h3,h4,h5,h6,ul,p {
 /* === main === */
 /* === filter === */
 .filter-list {
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -265,10 +275,13 @@ h1,h2,h3,h4,h5,h6,ul,p {
 }
 /* === projects === */
 .project-list {
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+.project-list img {
+    margin-bottom: 20px;
+    display: block;
 }
 .border {
     border-right: 1px solid #EEEEEE;
@@ -276,15 +289,19 @@ h1,h2,h3,h4,h5,h6,ul,p {
     border-left: 1px solid #EEEEEE;
 }
 .project-title {
+    margin-left: 24px;
+    margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .project-list p {
+    margin-left: 24px;
+    margin-bottom: 20px;
+
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.85;
 }
-.project-list img {
-    display: block;
-}
+
