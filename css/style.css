@@ -281,10 +281,12 @@ img {
 }
 .border {
     padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     border: 1px solid #EEEEEE;
 }
 .project-title {
-    margin-left: 24px;
     margin-bottom: 4px;
 
     font-size: 18px;
@@ -292,9 +294,6 @@ img {
     letter-spacing: 0.06em;
 }
 .project-list p {
-    margin-left: 24px;
-    margin-bottom: 20px;
-
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.85;
